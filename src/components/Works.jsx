@@ -19,14 +19,10 @@ const ProjectCard = ({
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="w-full sm:w-[360px]" // Adjust width for different screens
+      className="w-full sm:w-[360px]"
     >
       <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
+        options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl"
       >
         <div className="relative w-full h-[200px] sm:h-[230px]">
@@ -36,7 +32,7 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2"
@@ -62,7 +58,7 @@ const ProjectCard = ({
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[20px] sm:text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[12px] sm:text-[14px]">{description}</p>
+          <p className="mt-2 text-secondary text-[14px] sm:text-[16px]">{description}</p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -90,7 +86,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[15px] sm:text-[17px] max-w-3xl leading-[25px] sm:leading-[30px]"
         >
-          I have worked on a number of projects throughout my career in software development that demonstrate my abilities and technological know-how. These projects span from data-driven solutions to web applications, allowing me to apply my skills in practical settings. I focus on user-friendly interfaces, performance optimization, and problem-solving with technologies like React, Node.js, Python, and machine learning frameworks.
+          I have worked on a number of projects throughout my career in software development that demonstrate my abilities and technological know-how.
         </motion.p>
       </div>
 
